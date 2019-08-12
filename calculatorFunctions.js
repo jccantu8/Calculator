@@ -23,6 +23,68 @@ let operators = {
     }
 };
 
+// Add an eventlistener for keypresses.
+document.addEventListener('keydown', logKey);
+
+// Keyboard support.
+function logKey(e) {
+  switch(`${e.code}`) {
+  		case 'Numpad1':
+  			populateDisplay(1);
+  			break;
+  		case 'Numpad2':
+  			populateDisplay(2);
+  			break;
+  		case 'Numpad3':
+  			populateDisplay(3);
+  			break;
+  		case 'Numpad4':
+  			populateDisplay(4);
+  			break;
+  		case 'Numpad5':
+  			populateDisplay(5);
+  			break;
+  		case 'Numpad6':
+  			populateDisplay(6);
+  			break;
+  		case 'Numpad7':
+  			populateDisplay(7);
+  			break;
+  		case 'Numpad8':
+  			populateDisplay(8);
+  			break;
+  		case 'Numpad9':
+  			populateDisplay(9);
+  			break;
+  		case 'Numpad0':
+  			populateDisplay(0);
+  			break;
+  		case 'Backspace':
+  			backspace();
+  			break;
+  		case 'NumpadAdd':
+  			populateDisplay('+');
+  			break;
+  		case 'NumpadSubtract':
+  			populateDisplay('-');
+  			break;
+  		case 'NumpadMultiply':
+  			populateDisplay('*');
+  			break;
+  		case 'NumpadDivide':
+  			populateDisplay('/');
+  			break;
+  		case 'NumpadEnter':
+  			getResult();
+  			break;
+  		case 'NumpadDecimal':
+  			populateDisplay('.');
+  			break;
+  		default:
+  			break;
+  }
+}
+
 // Deletes character in calculator display. If there are no characters remaining after deleting, clearDisplay is called.
 function backspace() {
 	expression = document.getElementById("calculatorDisplay").innerHTML;
