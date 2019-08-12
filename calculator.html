@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+</head>
+
+<body>
+	<div class="container">
+		<div id="calculatorDisplay"><blink>_</blink></div>
+		<div id="buttons">
+			<button class="button operator" onclick="populateDisplay('(')">(</button><button class="button operator" onclick="populateDisplay(')')">)</button><button class="button operator" onclick="backspace()">⌫</button><button class="button" id="clearButton" onclick="clearDisplay()">clear</button>
+			<button class="button" onclick="populateDisplay(1)">1</button><button class="button" onclick="populateDisplay(2)">2</button><button class="button" onclick="populateDisplay(3)">3</button><button class="button operator" onclick="populateDisplay('*')">×</button>
+			<button class="button" onclick="populateDisplay(4)">4</button><button class="button" onclick="populateDisplay(5)">5</button><button class="button" onclick="populateDisplay(6)">6</button><button class="button operator" onclick="populateDisplay('/')">÷</button>
+			<button class="button" onclick="populateDisplay(7)">7</button><button class="button" onclick="populateDisplay(8)">8</button><button class="button" onclick="populateDisplay(9)">9</button><button class="button operator" onclick="populateDisplay('-')">-</button>
+			<button class="button" onclick="populateDisplay('.')">.</button><button class="button" onclick="populateDisplay(0)">0</button><button class="button" id="equalsButton" onclick="getResult()">=</button><button class="button operator" onclick="populateDisplay('+')">+</button>
+		</div>
+	</div>
+</body>
+
+<script src="calculatorFunctions.js"></script>
+
+</html>
