@@ -14,6 +14,11 @@ blink {
         50% { opacity: 0; }
 }
 
+#backspaceButton {
+	grid-row: 0 / span 2;
+	grid-column: 1 / span 2;
+}
+
 .button {
 	background-color: #6b4b40;
     color: white;
@@ -62,6 +67,8 @@ blink {
 
 #clearButton {
 	background-color: #c54e45; 
+	grid-row: 0 / span 2;
+	grid-column: 3 / span 2;
 }
 
 .container {

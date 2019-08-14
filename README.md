@@ -2,9 +2,9 @@
 
 Basic calculator supporting all fundamental operations i.e. +, -, *, and /.
 
-Also includes a delete button, opening and closing parentheses, and keyboard support.
+Also includes a delete button and keyboard support.
 
-Follows the traditional interpretation of PEMDAS employed from elementary to high school.
+Evaluates multiplication/division first followed by addition/subtraction.
 
 Also will display error(s) with entered expression.
 
